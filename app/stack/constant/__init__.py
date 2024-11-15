@@ -1,0 +1,1 @@
+# Global constants and configuration variables (e.g., API keys, status codes).
