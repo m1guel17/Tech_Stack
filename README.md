@@ -1,5 +1,5 @@
-# Project Name
-Welcome to the Project_Stack repository! This stack is designed as a modular, scalable foundation for developing a wide range of SaaS products using Hexagonal Architecture (Ports and Adapters) and Layered (Clean) Architecture principles. The stack is fully equipped to handle common SaaS requirements, including API integrations, data management, business logic, user authentication, and customizable frontends.
+# Tech_Stack - (in progress)
+Welcome to the Tech_Stack repository! This stack is designed as a modular, scalable foundation for developing a wide range of on-cloud SaaS products using Hexagonal Architecture (Ports and Adapters) and Layered (Clean) Architecture principles. The stack is fully equipped to handle common SaaS requirements, including API integrations, data management, business logic, user authentication, and customizable frontends.
 
 # Table of Contents
 1. [Project Overview](#Project-Overview)
@@ -63,6 +63,7 @@ app/
 │   ├── static/
 │   └── templates/
 └── config.py
+run.py
 ```
 
 ## Getting Started
