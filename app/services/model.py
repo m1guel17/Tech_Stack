@@ -1,7 +1,7 @@
-from app.interfaces.crud.create.model_repo import ModelRepository as Create
-from app.interfaces.crud.read.model_repo import ModelRepository as Read
-from app.interfaces.crud.update.model_repo import ModelRepository as Update
-from app.interfaces.crud.delete.model_repo import ModelRepository as Delete
+from app.database.CRUD.create.model_repo import ModelRepository as Create
+from app.database.CRUD.read.model_repo   import ModelRepository as Read
+from app.database.CRUD.update.model_repo import ModelRepository as Update
+from app.database.CRUD.delete.model_repo import ModelRepository as Delete
 
 """
     CURRENT_DIRECTORY - CURRENT_FILENAME script to (...insert the use for this script)
@@ -11,7 +11,7 @@ from app.interfaces.crud.delete.model_repo import ModelRepository as Delete
     >Author: Miguel
 """
 
-class Model:
+class ModelServices:
     # ================================= CREATE =================================
     @staticmethod
     def register(phone_number: str):        
@@ -24,11 +24,11 @@ class Model:
     
     # ================================= UPDATE =================================
     @staticmethod
-    def update_status(id: str, status_update: str):
-        Update.by(id, status=status_update)
+    def update_status(id: str, string: str):
+        Update.byId(id, string=string)
     
     # ================================= DELETE =================================
     @staticmethod
     def delete(id: str):
-        Delete.by(id)
+        Delete.byId(id)
     

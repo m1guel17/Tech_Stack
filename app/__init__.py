@@ -1,5 +1,5 @@
 from flask import Flask
-from app.models.database.db import db
+from app.database.db.object import db
 from app.config import Config
 
 def create_app():

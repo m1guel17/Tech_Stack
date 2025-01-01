@@ -1,17 +1,18 @@
-from app.models.orm.model import Model
+from app.database.orm.model import Model
 from app import db
 
 """
     CRUD -> {OPERATOR} CURRENT_FILENAME script to (...insert the use for this script)
     ----------------------------------------------------------------------------
     >Created: 2024-11-04
-    >Last_modified: 2024-11-04
+    >Last_modified: 2024-12-31
+    >Points: Services
     >Author: Miguel
 """
 
 class ModelRepository:
     @staticmethod
-    def by(id, **kwargs):
+    def byId(id, **kwargs):
         """Updates Model entry for the specified id.
         
         :param id: String variable used to update Model instance
@@ -20,6 +21,7 @@ class ModelRepository:
         .. versionchanged:: 0.1
         """
         modelInstance = Model.query.filter_by(id=id).first()
+        
         
         if modelInstance is not None:
             for key, value in kwargs.items():

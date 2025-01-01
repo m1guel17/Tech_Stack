@@ -1,12 +1,12 @@
 from flask import render_template
-from app.models.orm import *
-from app.services import Model
+# from app.database.orm import *
+from app.services import ModelServices
 from app import db
 
 def initialRoutes(app):
     @app.route('/')
     def index():
-        all = Model.get_all()
+        all = ModelServices.get_all()
             
         return render_template('index.html', all=all)
     
