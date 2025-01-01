@@ -1,6 +1,6 @@
 from flask import Flask
 from app.database.db.object import db
-from app.config import Config
+from app.stack.config.app import Config
 
 def create_app():
     app = Flask(__name__, template_folder = "./web/templates", static_folder = "./web/static")
