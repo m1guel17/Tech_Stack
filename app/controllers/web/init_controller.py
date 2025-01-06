@@ -1,6 +1,6 @@
 from flask import render_template
 # from app.database.orm import *
-from app.services import ModelServices
+from app.database.services import ModelServices
 from app import db
 
 def initialRoutes(app):

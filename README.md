@@ -25,7 +25,11 @@ This approach allows faster development cycles by making the code modular, testa
 ```
 app/
 ├── controllers/
-│   └── init_controller.py
+│   ├── security/
+│   │   └── __init__.py
+│   └── web/
+│       ├── __init__.py
+│       └── init_controller.py
 ├── core/
 │   └── layout/
 ├── interfaces/
