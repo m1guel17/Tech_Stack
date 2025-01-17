@@ -1,5 +1,5 @@
 # Tech_Stack - (in progress)
-Welcome to the Tech_Stack repository! This stack is designed as a modular, scalable foundation for developing a wide range of on-cloud SaaS products using Hexagonal Architecture (Ports and Adapters) and Layered (Clean) Architecture principles. The stack is fully equipped to handle common SaaS requirements, including API integrations, data management, business logic, user authentication, and customizable frontends.
+Welcome to the Tech_Stack repository! This stack is designed as a modular, scalable foundation for developing a wide range of on-cloud SaaS products using Layered (Clean) Architecture principles. The stack is fully equipped to handle common SaaS requirements, including API integrations, data management, business logic, user authentication, and customizable frontends.
 
 # Table of Contents
 1. [Project Overview](#Project-Overview)
@@ -14,12 +14,7 @@ Welcome to the Tech_Stack repository! This stack is designed as a modular, scala
 This stack provides a foundational codebase for building and deploying SaaS applications. By applying modular, testable, and reusable design patterns, developers can quickly assemble different services, add new features, and scale their applications. Whether you’re building an e-commerce API, CRM system, data analysis tool, or chatbot service, this stack is designed to reduce boilerplate and standardize best practices.
 
 ## Architecture Overview
-Our architecture combines Hexagonal (Ports and Adapters) Architecture with Layered (Clean) Architecture principles:
-
-* Hexagonal Architecture: Centralizes core logic and enables modular "adapters" that handle inputs/outputs, making it simple to switch or update dependencies like databases, APIs, or message formats.
-* Layered (Clean) Architecture: Separates the codebase into layers (Presentation, Application, Domain, and Infrastructure), creating clear separation of concerns and enabling each layer to be independently tested and maintained.  
-
-This approach allows faster development cycles by making the code modular, testable, and easy to maintain.
+This project is a modular and scalable web application designed with a layered architecture to ensure separation of concerns and ease of maintainability. It leverages clear boundaries between core logic, data models, business services, and presentation layers, making it adaptable for a wide range of use cases.
 
 ## Directory Structure
 ```
